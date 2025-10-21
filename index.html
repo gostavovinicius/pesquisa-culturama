@@ -153,38 +153,30 @@
         </fieldset>
 
         <fieldset>
-          <legend>Opinião</legend>
-          <p>Satisfação</p>
-          <input id="otima" name="userSatisfation" type="radio" value="otima" />
-          <label for="otima">Ótima</label>
-          <br />
-          <input id="boa" name="userSatisfation" type="radio" value="boa" />
-          <label for="boa">Boa</label>
+          <legend>Confirmações</legend>
+          <input
+            type="checkbox"
+            name="userLgpd"
+            id="userLgpdTerm"
+            value="accepted"
+            required
+          />
+          <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
           <br />
           <input
-            id="regular"
-            name="userSatisfation"
-            type="radio"
-            value="regular"
+            type="checkbox"
+            name="userGetResult"
+            id="getResult"
+            value="accepted"
           />
-          <label for="regular">Regular</label>
-          <br />
-          <input id="ruim" name="userSatisfation" type="radio" value="ruim" />
-          <label for="ruim">Ruim</label>
-
-          <br />
-
-          <label for="comment">Comentário</label>
-          <br />
-          <textarea
-            placeholder="Digite seu comentário aqui..."
-            name="userComment"
-            id="comment"
-          ></textarea>
+          <label for="userGetResult"
+            >Desejo receber o resultado por email</label
+          >
         </fieldset>
 
         <br />
         <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
       </form>
     </section>
   </body>
